@@ -106,6 +106,8 @@ section h1 {
   width: 400px;
   height: 420px;
   transition: 0.35s ease;
+  width: 400px;
+  height: 420px;
 }
 
 .cards img:hover {
@@ -311,10 +313,6 @@ p {
   display: flex;
 }
 
-#janela-modal2.abrir2 {
-  display: flex;
-}
-
 .contModal {
   padding: 20px;
 }
@@ -342,18 +340,3 @@ p {
   background-color: aliceblue;
   color: #000;
 }
-
-/* .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  min-width: 450px;
-  min-height: 200px;
-  background-color: #ffffffa1;
-  backdrop-filter: blur(10px);
-  padding: 50px;
-  border-radius: 20px;
-  z-index: 100;
-} */

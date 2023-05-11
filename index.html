@@ -34,6 +34,7 @@
   </head>
 
   <body>
+    
     <div class="background">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -104,7 +105,7 @@
           </div>
         </div>
       </nav>
-
+      
       <div class="Meio">
         <h1>NOVOS MODELOS</h1>
         <h1 id="homens">PARA HOMENS</h1>
@@ -118,12 +119,12 @@
     <section>
       <h1 id="desce">NOVAS COLEÇÕES</h1>
       <div class="Container-card-1">
-        <div onclick="abrirModal1()" class="cards">
+        <div onclick="abrirModal(1)" class="cards">
           <img src="images/Luck -1.png" />
         </div>
         <!--cards-->
 
-        <div onclick="abrirModal2()" class="cards">
+        <div onclick="abrirModal(2)" class="cards">
           <img src="images/Luck-2.png" />
         </div>
         <!--cards-->
@@ -131,12 +132,12 @@
       <!--Container-card-1-->
 
       <div class="Container-card-1">
-        <div class="cards">
+        <div onclick="abrirModal(3)" class="cards">
           <img src="images/camisaXadrez" />
         </div>
         <!--cards-->
 
-        <div class="cards">
+        <div onclick="abrirModal(4)" class="cards">
           <img src="images/luck-4.png" />
         </div>
         <!--cards-->
@@ -144,12 +145,12 @@
       <!--Container-card-1-->
 
       <div class="Container-card-1">
-        <div class="cards">
+        <div onclick="abrirModal(5)" class="cards">
           <img src="images/luck-3.png" />
         </div>
         <!--cards-->
 
-        <div class="cards">
+        <div onclick="abrirModal(6)" class="cards">
           <img src="images/Untitled - 1.png" />
         </div>
         <!--cards-->
@@ -249,12 +250,13 @@
         <li><a href="#">Venda</a></li>
       </div>
     </section>
+   
     <div class="janela-modal" id="janela-modal1">
       <div class="modalTeste">
-        <div><img src="images/Luck -1.png" /></div>
+        <div><img id="imagem" src="images/Luck -1.png" /></div>
         <div class="contModal">
-          <h1>Midnight Black</h1>
-          <p>
+          <h1 id="titRoup">Midnight Black</h1>
+          <p id="contRoup">
             Nossa camisa social preta de manga comprida é a escolha perfeita
             para quem busca um visual sofisticado e atemporal. Confeccionada com
             materiais de alta qualidade, essa camisa proporciona um caimento
@@ -271,36 +273,12 @@
           <button class="compra">COMPRAR</button>
         </div>
       </div>
-      <div class="janela-modal" id="janela-modal2">
-        <div class="modalTeste">
-          <div><img src="images/Luck-2.png" /></div>
-          <div class="contModal">
-            <h1>Midnight Black</h1>
-            <p>
-              Nossa camisa social preta de manga comprida é a escolha perfeita
-              para quem busca um visual sofisticado e atemporal. Confeccionada com
-              materiais de alta qualidade, essa camisa proporciona um caimento
-              perfeito e um toque suave à pele. Com sua cor preta clássica, ela
-              combina com qualquer ocasião, seja um evento formal ou um jantar
-              casual. Mostre sua elegância com essa peça indispensável no
-              guarda-roupa masculino.
-            </p>
-            <button onclick="defPreco(1)" class="tamanho">P</button>
-            <button onclick="defPreco(2)" class="tamanho">M</button>
-            <button onclick="defPreco(3)" class="tamanho">G</button>
-            <button onclick="defPreco(4)" class="tamanho">GG</button>
-            <h3 id="preco">R$ 0,00</h2>
-            <button class="compra">COMPRAR</button>
-          </div>
-        </div>
-     
-    </div>
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script src="modal.js"></script>
-    <script src="main.js"></script>
   </body>
 </html>

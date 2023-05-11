@@ -30,7 +30,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="modalDestaque.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -108,55 +108,55 @@
       <h1 id="destaque">Destaques</h1>
 
       <div class="products">
-        <div class="product">
+        <div onclick="abrirModal(1)" class="product">
           <img src="images/Vitupablovittar.jpeg" alt="Imagem do Produto" />
           <h2>Camisa preta</h2>
           <p>R$ 59,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(2)" class="product">
           <img src="images/steveminecraft.png" alt="Imagem do Produto" />
           <h2>Casaco estudantil</h2>
           <p>R$ 19,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(3)" class="product">
           <img src="images/Silasoculosrayban.png" alt="Imagem do Produto" />
           <h2>Óculos Ray Ban</h2>
           <p>R$ 635,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(4)" class="product">
           <img src="images/Venasestileira.png" alt="Imagem do Produto" />
           <h2>Touca branca</h2>
           <p>R$ 59,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(5)" class="product">
           <img src="images/Gustacountry.png" alt="Imagem do Produto" />
           <h2>Lenço country</h2>
           <p>R$ 29,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(6)" class="product">
           <img src="images/Iagocamisaflorida.png" alt="Imagem do Produto" />
           <h2>Camisa florida para o verão</h2>
           <p>R$ 59,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(7)" class="product">
           <img src="images/Silasmolejo.png" alt="Imagem do Produto" />
           <h2>Kit de inverno</h2>
           <p>R$ 199,90</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(8)" class="product">
           <img src="images/IagoTerno.png" alt="Imagem do Produto" />
           <h2>Terno elegante</h2>
           <p>R$ 2000,00</p>
         </div>
 
-        <div class="product">
+        <div onclick="abrirModal(9)" class="product">
           <img src="images/Rodrigo.png" alt="Imagem do Produto" />
           <h2>Suéter branco</h2>
           <p>R$ 79,90</p>
@@ -200,5 +200,21 @@
         <li><a href="#">Venda</a></li>
       </div>
     </section>
+    <div class="janela-modal" id="janela-modal1">
+      <div class="modalTeste">
+        <div><img id="imagem" src="images/Vitupablovittar.jpeg" /></div>
+        <div class="contModal">
+          <h1 id="titRoup">Camiseta Básica Preta</h1>
+          <p id="contRoup">
+            Essa camiseta é simples e versátil, apresentando um tom de preto sólido que combina com uma variedade de looks e estilos pessoais. É confeccionada em tecido macio e confortável, oferecendo um ótimo caimento ao vestir. Com decote redondo clássico e mangas curtas, essa camiseta é uma escolha prática e indispensável para o dia a dia, podendo ser combinada com jeans, bermudas e até mesmo blazers ou jaquetas, dependendo da ocasião.
+          </p>
+          <button onclick="defPreco(1)" class="tamanho">P</button>
+          <button onclick="defPreco(2)" class="tamanho">M</button>
+          <button onclick="defPreco(3)" class="tamanho">G</button>
+          <button onclick="defPreco(4)" class="tamanho">GG</button>
+          <h3 id="preco">R$ 0,00</h2>
+          <button class="compra">COMPRAR</button>
+        </div>
+      </div>
   </body>
 </html>
