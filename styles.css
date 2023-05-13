@@ -278,9 +278,11 @@ i {
 #title {
   font-size: 40px;
 }
+
 p {
   margin-left: 5px;
 }
+
 .janela-modal {
   width: 100vw;
   height: 100vw;

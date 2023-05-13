@@ -163,9 +163,11 @@ i {
   padding: 2px;
   margin-top: -2px;
 }
+
 #title {
   font-size: 40px;
 }
+
 .container {
   transform: scale(0.9);
 }
